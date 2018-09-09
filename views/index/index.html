@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="//s3.pstatp.com/image/toutiao_mobile/short_cut_icon_1.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/index/css/index.css">
+    <script src="/assets/index/js/rem.js"></script>
+    <title>推荐</title>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <a href="javascript:;" class="xin"></a>
+            <div class="write"></div>
+        </div>
+        <div class="logo">
+            <a href="javascript:;" class="logo-one"></a>
+            <span><i class="iconfont">&#xe679;</i></span>
+        </div>
+        <div class="right">
+            <a href="/index.php?c=page&m=search" class="search"></a>
+        </div>
+    </div>
+    <div class="title">
+        <div class="con">
+            <ul class="big-box">
+                <?php foreach($array as $k => $v) {?>
+                <li class="<?php echo $v['id']==$cid?'active':''?>">
+                    <a href="/index.php?c=page&m=index&cid=<?php echo $v['id']?>&page=1"><?php echo $v['name'] ?></a>
+                </li>
+                <?php } ?>
+            </ul>
+        </div>
+        <div class="right"><a href="/index.php?c=page&m=category">+</a></div>
+    </div>
+    <div class="background">
+        <?php foreach($course as $k => $v) {?>
+        <div class="content">
+            <a href="<?php echo $v['url'] ?>" class="one">
+                <div class="left">
+                    <h3><?php echo $v['title'] ?></h3>
+                    <div class="more">
+                        <span class="zero">置顶</span>
+                        <span class="little">央视网新闻</span>
+                        <span class="people"><?php echo $v['create_time'] ?></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="<?php echo $v['image'] ?>" alt="">
+                </div>
+            </a>
+        </div>
+         <?php } ?>
+        <!-- <div class="content-1">
+            <a href="javascript:;" class="two">
+                <h3>习近平谈如何打赢脱贫攻坚战</h3>
+                <div class="more">
+                    <span class="zero">置顶</span>
+                    <span class="little">党建网微平台</span>
+                    <span class="people">评论  72</span>
+                    <span class="time">1小时前</span>
+                </div>
+            </a>
+
+        </div>
+        <div class="content-2">
+            <a href="javascript:;" class="three">
+                <h3>杭州这个小伙子，超帅的！你在哪里？大家都想说声谢谢你！</h3>
+                <ul class="voice">
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                </ul>
+                <div class="more">
+                    <span class="zero">热</span>
+                    <span class="little">都市快报</span>
+                    <span class="people">评论  616</span>
+                    <span class="time">45分钟前</span>
+                </div>
+            </a>
+
+        </div>
+        <div class="active">
+            <a href="javascript:;">
+                <h3>
+                    青春不等待狂欢购车季，奇瑞818厂家超值抢购惠香山站
+                </h3>
+                <div class="big">
+                    <img src="" alt="">
+                </div>
+                <div class="more">
+                    <span class="zero">广告</span>
+                    <span class="little">香山奇瑞</span>
+                    <span class="people">评论  0</span>
+                    <span class="time">5分钟前</span>
+                </div>
+            </a>
+        </div>
+        <div class="content-2">
+            <a href="javascript:;" class="three">
+                <h3>美国各界恐慌了 贸易战还要继续打？</h3>
+                <ul class="voice">
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                </ul>
+                <div class="more">
+                    <span class="zero">热</span>
+                    <span class="little">都市快报</span>
+                    <span class="people">评论  616</span>
+                    <span class="time">45分钟前</span>
+                </div>
+            </a>
+
+        </div>
+        <div class="content-2">
+            <a href="javascript:;" class="three">
+                <h3>喝了10年酸奶才知道，原来盒上有个小机关</h3>
+                <ul class="voice">
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                    <li class="voice1">
+                        <img src="" alt="">
+                    </li>
+                </ul>
+                <div class="more">
+                    <span class="zero">热</span>
+                    <span class="little">都市快报</span>
+                    <span class="people">评论  616</span>
+                    <span class="time">45分钟前</span>
+                </div>
+            </a>
+
+        </div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 790985 */
+    src: url('https://at.alicdn.com/t/font_790985_m5du91adk3g.eot');
+    src: url('https://at.alicdn.com/t/font_790985_m5du91adk3g.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_790985_m5du91adk3g.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_790985_m5du91adk3g.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_790985_m5du91adk3g.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family: 'iconfont';
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.header{
+    width: 100%;
+    height: 0.88rem;
+    background: #D43D3D;
+    display: flex;
+    box-sizing: border-box;
+    padding:0 0.46rem;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+}
+.header .left{
+    width: 0.64rem;
+    height: 0.50rem;
+    margin-top: 0.19rem;
+    position: relative;
+}
+.header .left .xin{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/index/img/xin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header .left .write{
+    background: #FFFFFF;
+    width: 0.20rem;
+    height: 0.20rem;
+    border-radius: 50%;
+    position: absolute;
+    top:0.05rem;
+    right:0.1rem;
+}
+.header .logo{
+    width: 2.46rem;
+    height: 0.88rem;
+    box-sizing: border-box;
+    padding:0.22rem 0;
+}
+.header .logo .logo-one{
+    float: left;
+    display: block;
+    width: 1.92rem;
+    height: 0.44rem;
+    background-image: url("/assets/index/img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.header .logo span{
+    display: block;
+    float: right;
+    width: 0.50rem;
+    height: 0.44rem;
+    font-size: 0.30rem;
+    color:#fff;
+
+}
+.header .right{
+    width: 0.48rem;
+    height: 0.48rem;
+    margin-top: 0.20rem;
+}
+.header .right .search{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/index/img/search.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.title .con{
+    width: 100%;
+    height: 0.72rem;
+    background:#F4F5F6;
+    position: fixed;
+    top:0.88rem;
+    left:0;
+    overflow: auto;
+}
+.title .con::-webkit-scrollBar{
+    display: none;
+}
+.title .con .big-box{
+    width: 200%;
+    height: 100%;
+}
+.title .con .big-box li{
+    display: block;
+    width: 1.08rem;
+    height: 0.52rem;
+    margin:0.10rem 0 0.10rem 0.10rem;
+    box-sizing: border-box;
+    float:left;
+}
+.title .con .big-box li a{
+    display: block;
+    width: 1.08rem;
+    height: 0.52rem;
+    color:#505050;
+    font-size: 0.35rem;
+    line-height: 0.52rem;
+    text-align: center;
+    word-break: break-word;
+}
+.title .con .big-box li a.active{
+    color:#F85959;
+}
+.title .right{
+    width: 0.80rem;
+    height: 0.72rem;
+    background:#F4F5F6;
+    position: fixed;
+    top:0.88rem;
+    right:0;
+}
+.title .right a{
+    display: block;
+    width: 0.80rem;
+    height: 0.72rem;
+    color:#F85959;
+    font-size: 0.7rem;
+    line-height: 0.60rem;
+    text-align: center;
+}
+.background{
+    width: 100%;
+    background: #fff;
+    padding:0 0.30rem;
+    box-sizing: border-box;
+    margin-top: 1.6rem;
+}
+.background .content{
+    width: 100%;
+    height: auto;
+}
+.background .content a{
+    display: block;
+    width: 100%;
+    height: 2.12rem;
+    background: #fff;
+    padding:0.32rem 0;
+    border-bottom: 0.01rem solid #F4F4F4;
+    box-sizing: border-box;
+}
+.background .content .left{
+    width: 4.62rem;
+    float: left;
+}
+.background .content .right{
+    width: 2.2679rem;
+    height: 1.4766rem;
+    float: right;
+}
+.background .content .right img{
+    display: block;
+    width: 2.2679rem;
+    height: 1.4766rem;
+}
+.background .content .left h3{
+    width: 4.38rem;
+    font-size: 0.34rem;
+    color: #222;
+    font-weight: normal;
+}
+.background .content .more{
+    width: 100%;
+    height: 0.26rem;
+    margin-top:0.12rem;
+}
+.background .content .more .zero{
+    display: block;
+    width: 0.50rem;
+    height: 0.26rem;
+    border:1px solid rgba(248, 89, 89, 0.5);
+    margin-right:0.1rem;
+    box-sizing: border-box;
+    font-size: 0.18rem;
+    color:#f85959;
+    line-height: 0.26rem;
+    text-align: center;
+    border-radius: 0.04rem;
+    float:left;
+}
+.background .content .more .little{
+    display: block;
+    width: 1.20rem;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .content .more .people{
+    display: block;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .content-1 a{
+    display: block;
+    width: 100%;
+    height: 1.48rem;
+    background: #fff;
+    padding:0.32rem 0;
+    border-bottom: 0.01rem solid #F4F4F4;
+    box-sizing: border-box;
+}
+.background .content-1 h3{
+    font-size: 0.34rem;
+    color: #222;
+    font-weight: normal;
+}
+.background .content-1 .more{
+    width: 100%;
+    height: 0.26rem;
+    margin-top:0.12rem;
+}
+.background .content-1 .more .zero{
+    display: block;
+    width: 0.50rem;
+    height: 0.26rem;
+    border:1px solid rgba(248, 89, 89, 0.5);
+    margin-right:0.1rem;
+    box-sizing: border-box;
+    font-size: 0.18rem;
+    color:#f85959;
+    line-height: 0.26rem;
+    text-align: center;
+    border-radius: 0.04rem;
+    float:left;
+}
+.background .content-1 .more .little{
+    display: block;
+    width: 1.20rem;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .content-1 .more .people{
+    display: block;
+    width: 0.70rem;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .content-1 .more .time{
+    display: block;
+    width: 0.72rem;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .content-2 a{
+    display: block;
+    width: 100%;
+    height: 3.467rem;
+    background: #fff;
+    padding:0.32rem 0;
+    border-bottom: 0.01rem solid #F4F4F4;
+    box-sizing: border-box;
+}
+.background .content-2 h3{
+    font-size: 0.34rem;
+    color: #222;
+    font-weight: normal;
+}
+.background .content-2 .voice{
+    width: 100%;
+    height: 1.476rem;
+    margin-top: 0.12rem;
+    display: flex;
+    justify-content: space-between;
+}
+.background .content-2 .voice1{
+    width: 2.257rem;
+    height: 1.476rem;
+}
+.background .content-2 .voice1 img{
+    display: block;
+    width: 2.257rem;
+    height: 1.476rem;
+}
+.background .content-2 .more{
+    width: 100%;
+    height: 0.26rem;
+    margin-top:0.12rem;
+}
+.background .content-2 .more .zero{
+    display: block;
+    height: 0.26rem;
+    border:1px solid rgba(248, 89, 89, 0.5);
+    margin-right:0.1rem;
+    box-sizing: border-box;
+    font-size: 0.18rem;
+    color:#f85959;
+    line-height: 0.26rem;
+    text-align: center;
+    border-radius: 0.04rem;
+    float:left;
+}
+.background .content-2 .more .little{
+    display: block;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .content-2 .more .people{
+    display: block;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .content-2 .more .time{
+    display: block;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .active a{
+    display: block;
+    height: 5.8613rem;
+    width: 100%;
+    padding:0.32rem 0;
+    border-bottom: 0.01rem solid #F4F4F4;
+    box-sizing: border-box;
+}
+.background .active h3{
+    font-size: 0.34rem;
+    color: #222;
+    font-weight: normal;
+}
+.background .active .big img{
+    display: block;
+    width: 100%;
+    height: 3.8813rem;
+    margin-top: 0.12rem;
+}
+.background .active .more{
+    width: 100%;
+    height: 0.26rem;
+    margin-top:0.12rem;
+}
+.background .active .more .zero{
+    display: block;
+    height: 0.26rem;
+    border:1px solid rgba(42, 144, 215, 0.5);
+    margin-right:0.1rem;
+    box-sizing: border-box;
+    font-size: 0.18rem;
+    color:#5BA9E0;
+    line-height: 0.26rem;
+    text-align: center;
+    border-radius: 0.04rem;
+    float:left;
+}
+.background .active .more .little{
+    display: block;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .active .more .people{
+    display: block;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}
+.background .active .more .time{
+    display: block;
+    height: 0.24rem;
+    font-size: 0.18rem;
+    float:left;
+    color:#B6B6B6;
+    margin-right:0.1rem;
+}

@@ -1,0 +1,123 @@
+<?php include ('../views/admin/admin_header.html'); ?>
+<h1>Category</h1>
+<table class="table table-centered mb-0">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>Is_default</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody id="tbody1">
+    <?php foreach($category as $k => $v){?>
+    <tr data-id="<?php echo $v['id']?>">
+        <td><?php echo $v['id']?></td>
+        <td><input  data-type='name' class="form-control" type="text" value="<?php echo $v['name']?>"></td>
+        <td><input  data-type='is_default' class="form-control" type="text" value="<?php echo $v['is_default']?>"></td>
+        <td><button class="btn btn-link btn-rounded remove" type="button">删除</button></td>
+    </tr>
+    <?php } ?>
+    </tbody>
+</table>
+<script>
+    $(function(){
+        //分类页js
+    //删除
+    $('#tbody1').on('click','.remove',function(){
+        var id = $(this).closest('tr').attr('data-id');
+        $.ajax({
+            url:'/admin.php',
+            data:{
+                m:'delete',
+                c:'category',
+                id:id
+            },
+            success:function(data){
+                if(data=='1'){
+                    location.reload();
+                }else{
+                    alert('网络有问题')
+                }
+
+            }
+        });
+    });  
+     //新建
+    let add1 = $('#add1');//获取新建按钮。
+    console.log(add1)
+    add1.on('click',function(){   //添加点击事件
+        $.ajax({
+            url:'/admin.php',
+            data: {
+                c: 'category',
+                m: 'insert'
+            },
+            success:function(data){
+                    if(data=='1'){
+                        location.reload();
+                    }else{
+                        alert('网络有问题')
+                    }
+                }
+        })
+    });
+        //失去焦点后提交内容成功
+    $('#tbody1').on('blur','.form-control',function(){
+        let id = $(this).closest('tr').attr('data-id')
+        let k = $(this).attr('data-type');
+        let v = $(this).val();
+        $.ajax({
+            url:'/admin.php',
+            data:{
+                m:'update',
+                c:'category',
+                id:id,
+                k:k,
+                v:v
+            },
+            success:function(data){
+                if(data=='1'){
+                    location.reload();
+                }else{
+                    alert('网络有问题')
+                }
+            }
+        })
+    }) 
+    })
+</script>
+<button type="button" class="btn btn-primary btn-rounded" id="add1">新建</button>
+<div class="spinner" id="spinner" style="display: none">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+</div>
+
+
+ 总条数
+  <?php echo $num?>
+  <div>
+      <ul id="pagination-demo" class="pagination-sm"></ul>
+  </div>
+
+<!--   分页的jquery代码  -->
+  <script>
+    $(function(){
+     $('#pagination-demo').twbsPagination({
+        totalPages: <?php echo $page_total?>,
+        visiblePages: 5,
+        startPage: <?php echo $page?>,
+        onPageClick: function (event, page) {
+            if(page!=<?php echo $page?>){
+                location.href="/admin.php?c=category&m=index&page="+page
+            }
+        }
+    });
+  })
+  </script>
+
+<?php include ('../views/admin/admin_footer.html'); ?>
+

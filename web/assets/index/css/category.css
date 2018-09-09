@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+body{
+    background: #F8F8F8;
+}
+.title{
+    width: 100%;
+    height:0.51rem;
+    position: fixed;
+    top:0;
+    left:0;
+    background: #D43D3D;
+}
+.title .backbtn{
+    width: 0.44rem;
+    height: 0.51rem;
+    display: block;
+    position: relative;
+}
+.title .backbtn .back{
+    width: 50%;
+    height: 50%;
+    background: url("/assets/index/img/back.png") no-repeat 50%;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.title .zero{
+    width: 0.64rem;
+    height: 0.21rem;
+    display: block;
+    font-size: 0.16rem;
+    color: #fff;
+    font-weight: 900;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.top-con{
+    width: 100%;
+    margin-top:0.51rem;
+}
+.top-con .title-one{
+    width: 100%;
+    height: 0.24rem;
+    padding: 0 0.1rem;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    font-size: 0.12rem;
+    color: #666;
+    line-height: 0.24rem;
+}
+.top-con .controlDetail{
+    display: block;
+    width: 100%;
+    margin: 0.1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-con .controlDetail .figure{
+    display: block;
+    width: 25%;
+    height: 0.34rem;
+    margin-bottom: 0.10rem;
+}
+.top-con .controlDetail .figure.active{
+    display: none;
+}
+.top-con .controlDetail .figure a{
+    font-size: 0.16rem;
+    display: block;
+    margin: 0 0.08rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 2em;
+    color:#131313;
+}
+.top-con.ul{
+    width: 100%;
+    margin-top:0rem;
+}
