@@ -1,6 +1,6 @@
 <?php
 if(isset($_GET['c'])){
-	$className = $_GET['c']
+	$className = $_GET['c'];
 }else{
 	$className ='page';
 }
