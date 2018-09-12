@@ -42,6 +42,14 @@ CREATE TABLE IF NOT EXISTS `feeds` (
 INSERT INTO `feeds` (`user_avatar`,`user_name`,`content`,`images`,`publish_time`,`publish_address`) VALUES
 ('http://img2.woyaogexing.com/2018/09/10/bc867a2c5dd84b8abe83cd20f95b2280!400x400.jpeg','欣玥','最近科技圈最火的手机，应该就属vivo X23了。','http://img13.360buyimg.com/n7/jfs/t20293/89/697940413/175156/2dc4fbd1/5b15ffd5Nccf91838.jpg;http://img13.360buyimg.com/n7/jfs/t20293/89/697940413/175156/2dc4fbd1/5b15ffd5Nccf91838.jpg','8分钟前','墨尔本')，
 ('http://img2.woyaogexing.com/2018/09/10/bc867a2c5dd84b8abe83cd20f95b2280!400x400.jpeg','欣玥','最近科技圈最火的手机，应该就属vivo X23了。','https://article-fd.zol-img.com.cn/t_s200x150/g5/M00/0A/0A/ChMkJluM_M-IOxrPAAESq-GbdG4AArbJQO60kEAARLD446.jpg;https://article-fd.zol-img.com.cn/t_s200x150/g5/M00/0A/0A/ChMkJluM_M-IOxrPAAESq-GbdG4AArbJQO60kEAARLD446.jpg','8分钟前','墨尔本');
+('https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erxMnXnb4zE8dwdtTSCOqGicD3rxwGHzIjEWf2JPVgY9RDDP5AQrLaic12pYlMicItW8U80b3dZibPNQA/132', '马浩东', '9月你好', '', '12分钟前', '悉尼'),
+('https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erxMnXnb4zE8dwdtTSCOqGicD3rxwGHzIjEWf2JPVgY9RDDP5AQrLaic12pYlMicItW8U80b3dZibPNQA/132', '马浩东', '未来可期', '', '12分钟前', '悉尼'),
+('https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erxMnXnb4zE8dwdtTSCOqGicD3rxwGHzIjEWf2JPVgY9RDDP5AQrLaic12pYlMicItW8U80b3dZibPNQA/132', '马浩东', '三观要正', '', '12分钟前', '悉尼'),
+('https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erxMnXnb4zE8dwdtTSCOqGicD3rxwGHzIjEWf2JPVgY9RDDP5AQrLaic12pYlMicItW8U80b3dZibPNQA/132', '马浩东', 'My   Love', '', '12分钟前', '悉尼'),
+('https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erxMnXnb4zE8dwdtTSCOqGicD3rxwGHzIjEWf2JPVgY9RDDP5AQrLaic12pYlMicItW8U80b3dZibPNQA/132', '马浩东', '最近科技圈最火的手机，应该就属vivo X23了。', '', '12分钟前', '悉尼'),
+('https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erxMnXnb4zE8dwdtTSCOqGicD3rxwGHzIjEWf2JPVgY9RDDP5AQrLaic12pYlMicItW8U80b3dZibPNQA/132', '马浩东', '最近科技圈最火的手机，应该就属vivo X23了。', '', '12分钟前', '悉尼'),
+('https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83erxMnXnb4zE8dwdtTSCOqGicD3rxwGHzIjEWf2JPVgY9RDDP5AQrLaic12pYlMicItW8U80b3dZibPNQA/132', '马浩东', '最近科技圈最火的手机，应该就属vivo X23了。', '', '12分钟前', '悉尼');
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
