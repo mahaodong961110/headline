@@ -80,7 +80,7 @@ class wechat extends db
        $file_name = $_FILES['f']['name'];
        $dist = './assets/wechat/' .$file_name ;
        move_uploaded_file($src, $dist);
-       echo 'http://try.third.com/assets/wechat/'.$file_name;
+       echo 'https://mhdperson1.applinzi.com/assets/wechat/'.$file_name;
     }
 } 
 
