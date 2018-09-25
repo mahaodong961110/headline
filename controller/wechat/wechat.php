@@ -61,7 +61,6 @@ class wechat extends db
         $url = 'https://api.weixin.qq.com/sns/jscode2session?appid=wx648f891ef721c399&secret=0127742ee6712a12ea408d00b0c20fc8&js_code='.$_GET['code'].'&grant_type=authorization_code';
         $result = https_request($url);
         $openid = $result['openid'];
-        print_r($result);
         $stmt = $this->pdo->prepare("insert into feeds(openid,user_avatar,user_name,content,images,publish_address)values(?,?,?,?,?,?)");
         $stmt->bindValue(1,$openid);
         $stmt->bindValue(2,$_GET['user_avatar']);
